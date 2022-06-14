@@ -5,17 +5,17 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 
 import { AuthRoutingModule } from './auth-routing.module';
+import { MaterialModule } from '../material/material.module';
 
-
-
-@NgModule({
+@NgModule( {
   declarations: [
     LoginComponent,
     RegistroComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    MaterialModule
   ]
-})
+} )
 export class AuthModule { }
